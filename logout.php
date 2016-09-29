@@ -1,0 +1,10 @@
+<?php
+session_start();
+//session_destroy();
+$_SESSION['login']=false;
+unset($_SESSION['acc']);
+unset($_SESSION['user']);
+unset($_SESSION['login']);
+//session_destroy();
+header("location:personal_banking.php");
+?>
